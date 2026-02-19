@@ -1,2 +1,6 @@
 This is the First Git Remote
+<<<<<<< HEAD
 This is Local line
+=======
+This is a Remote line
+>>>>>>> 6711c36d643a34ed7c6cbfb8f584e0e5a5bf3020
