@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Form</title>
+</head>
+<body>
+
+<form method="post" action="submit.html">
+
+<fieldset>
+<legend><h1>Personal Information</h1></legend>
+
+<div>
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" name="fullname" 
+pattern="[A-Za-z]+_[A-Za-z]+" 
+placeholder="FirstName_LastName" required>
+</div>
+<br>
+
+<div>
+<label for="about">About Yourself:</label>
+<textarea id="about" name="about" rows="5" cols="50"></textarea>
+</div>
+<br>
+
+<div>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" placeholder="   sample@gmail.com" required>
+</div>
+<br>
+
+<div>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" 
+minlength="8" required>
+</div>
+<br>
+
+<div>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" 
+pattern="[0-9]{10}" required>
+</div>
+<br>
+
+<div>
+<label for="website">Website:</label>
+<input type="url" id="website" name="website" optional>
+</div>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend><h2>Skills & Preferences</h2></legend>
+
+<div>
+<label>Skills:</label>
+<input type="checkbox" id="html" name="skills" value="HTML" checked>
+<label for="html">HTML</label>
+
+<input type="checkbox" id="css" name="skills" value="CSS">
+<label for="css">CSS</label>
+
+<input type="checkbox" id="js" name="skills" value="JavaScript">
+<label for="js">JavaScript</label>
+</div>
+<br>
+
+<div>
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="Female" checked>
+<label for="female">Female</label>
+</div>
+<br>
+
+<div>
+<label for="color">Preferred Color:</label>
+<input type="color" id="color" name="color" value="#0000ff">
+</div>
+<br>
+
+<div>
+<label for="experience">Experience Level (0-10):</label>
+<input type="range" id="experience" name="experience" 
+min="0" max="10" step="2">
+</div>
+<br>
+
+<div>
+<label for="search">Search Interest:</label>
+<input type="search" id="search" name="search">
+</div>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend><h2>Date & Time Inputs</h2></legend>
+
+<div>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" max="2005-12-31">
+</div>
+<br>
+
+<div>
+<label for="time">Available Time:</label>
+<input type="time" id="time" name="time" 
+min="09:00" max="18:30">
+</div>
+<br>
+
+<div>
+<label for="joining">Joining Month:</label>
+<input type="date" id="joining" name="joining" 
+value="2026-01-09">
+</div>
+<br>
+
+<div>
+<label for="week">Training Week:</label>
+<input type="week" id="week" name="week" 
+value="2026-W07" readonly>
+</div>
+<br>
+
+<div>
+<label for="slot">Interview Slot:</label>
+<input type="datetime-local" id="slot" name="slot">
+</div>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend><h2>Selection & Upload</h2></legend>
+
+<div>
+<label for="technology">Technology:</label>
+<select id="technology" name="technology" placeholder="Select Technology">
+<option value=".Net">.Net</option>
+<option value="Angular">Angular</option>
+<option value="Java">Java</option>
+<option value="ReactJS">ReactJS</option>
+<option value="QA">QA</option>
+</select>
+</div>
+<br>
+
+<div>
+<label for="resume">Resume Upload (PDF only):</label>
+<input type="file" id="resume" name="resume" accept=".pdf">
+</div>
+
+</fieldset>
+
+<br>
+
+<!-- Hidden Field -->
+<input type="hidden" name="userid" value="USER12345">
+
+<br>
+
+<div>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<input type="button" value="Click Me">
+</div>
+
+</form>
+
+</body>
+</html>
