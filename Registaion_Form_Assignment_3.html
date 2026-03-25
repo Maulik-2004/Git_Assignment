@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Field</h2>
+
+     <form method="post" action="submit.html">      
+     <legend>Personal Information</legend>
+
+       <div>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname"><br><br>
+
+        <label>About Yourself:</label><br>
+        <textarea name="about" rows="4" cols="30"></textarea><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Website:</label><br>
+        <input type="url" name="website"><br><br>
+
+        <label>Skills:</label><br>
+        <input type="text" name="skills"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label>Preferred Color:</label><br>
+        <input type="color" name="color"><br><br>
+
+        <label>Experience Level:</label><br>
+        <select name="experience">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <label>Search Interest:</label><br>
+        <input type="checkbox" name="search_interest" value="yes"> Yes
+        <br>
+        <input type="checkbox" name="search_interest" value="no"> No
+        <br><br>
+        <input type="submit" value="Submit"><br><br>
+        <input type="reset" value="Reset">
+        <input type="button" value="Click Me">
+
+    </form>
+
+</body>
+</html>
